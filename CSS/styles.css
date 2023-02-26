@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+:root {
+  --bg-color: #10101a;
+  --main-color: #215036;
+  --2nd-main-color: #ffffffcc;
+  --text-color: #fff;
+  --span-color:#0dd628cc;
+  --btn--color: #030303;
+  --big-font: 5rem;
+  --h2-font: 1.9rem;
+  --p-font: 1rem;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  padding: 24px 14%;
+  transition: 0.3s;
+}
+
+.img-fluid{
+    width: 150px;
+    height: 150px;
+    left: 50.11px;
+    top: 10px;
+    border-radius: 70px;
+    transform: rotate(0.19deg);
+}
+.navbar a{
+    color: var(--text-color);
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+
+}
+.navbar a:hover{
+    background: var(--main-color);
+    border-radius: 50px;
+    transition: .3s;
+}
+
+#menu-icon{
+    font-size: 28px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 210px 14px;
+}
+.about{
+    
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+
+.me-img img{
+    
+    width: 350px;
+    height: 350px;
+    border-radius: 250px;
+}
+
+.about-text h2{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    margin: 0 0 20px;
+}
+span{
+    color: var(--span-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    margin: 0 0 20px;
+}
+
+.about-text h5{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+.about-text h6{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    margin: 0 0 20px;
+
+}
+.about-text p{
+    max-width: 470px;
+    font-size: var(--p-font);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--2nd-main-color);
+}
+.download__btn{
+    background: var(--span-color);
+    color: var(--text-color);
+    box-shadow: 4px 4px var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+   
+ 
+    transition: ease all 0.35s;
+}
+.download__btn:hover{
+    background: var(--btn--color);
+    color: var(--span-color);
+    box-shadow: 4px 4px var(--span-color);
+}
